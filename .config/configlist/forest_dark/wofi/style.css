@@ -1,0 +1,49 @@
+window {
+    background-color: #2c2520;
+    
+    font-family: "Noto Sans Balinese";
+    font-size: 24px;
+
+    border: 2px solid #d4be85;
+}
+
+#outer-box {
+    border: 2px solid #d4be85;
+    color: #d4be85;
+}
+
+#input {
+    border: none;
+    background-color: #2c2520;
+    color: #d4be85;
+    caret-color: #d4be85;
+
+    border-radius: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #d4be85;
+}
+
+/* Disable the blue border when typing */
+#input:focus {
+    box-shadow: none;
+}
+
+#text {
+    color: #d4be85;
+}
+
+#img {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#entry:selected {
+    background-color: #d4be85;
+    border: none;
+}
+
+#text:selected {
+    color: #2c2520;
+}
+
