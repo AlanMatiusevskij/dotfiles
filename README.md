@@ -16,7 +16,9 @@ or
 
 > Before using the `-s` flag, make sure that `hyprpaper.sh` and `waybar.sh` bash scripts are in your HOME (~/) directory. (later will make it so c++ will replace those)
 
-use command `configlist -s <THEMENAME>`. The list of already existing ones you can see by using `configlist -l`.
+use command `configlist -s <THEMENAME>`. 
+
+The list of already existing themes you can see by using `configlist -l`.
 
 #### The way it works:
 
@@ -26,7 +28,7 @@ Then use `configlist -s` (-switch) to delete the current ~/.config/ folders that
 Do note that you might need to edit source code (it's a mess, don't look) if you want it to restart processes besides `hyprland, waybar, hyprpaper`.
 
 When deleting the current ~/.config/ folders to replace with the ones specified during 'creation', 
-the applicaiton creates a one-time backup of the current .config directories that are going to be replaced. Find the backup in ~/.config/configlist/last_replaced/
+the application creates a one-time backup of the current .config directories that are going to be replaced. Find the backup in ~/.config/configlist/last_replaced/
 
 ---
 
@@ -36,7 +38,7 @@ the applicaiton creates a one-time backup of the current .config directories tha
 
 #### Things to manually change:
 
-Required:
+**Required:**
 1) In `.config/hypr/Scripts/quote_gacha`, line 3, enter your user name.
 2) In `.config/hypr/hyprpaper.conf`, change active wallpapers and their paths (by default looks for them in ~/Pictures).
 3) In `.config/hypr/hyprlock.conf`, change lockscreen wallpaper path.
