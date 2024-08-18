@@ -44,5 +44,6 @@ the application creates a one-time backup of the current .config directories tha
 3) In `.config/hypr/hyprlock.conf`, change lockscreen wallpaper path.
 
 Optional: 
+* Put `.config/hypr/Scripts/quote_gacha.sh` in your home directory for a chance to see a quote on Hyprland startup. (small list, however)
 * In `.config/waybar/modules/volume.sh`, change script accordingly if volume control in waybar doesn't work right.
 * To use `configlist` binary from terminal, put it in your PATH folder /usr/local/bin.
