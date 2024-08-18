@@ -1,0 +1,10 @@
+[opener]
+edit = [
+{ run = 'nvim "$@"', block = true },
+]
+
+play = [
+    { run = 'vlc "$@"', orphan = true, for = "unix"},
+    { run = 'mpv --force-window "$@"', orphan = true, for = "unix"},
+]
+
