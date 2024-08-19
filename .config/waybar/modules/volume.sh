@@ -25,10 +25,15 @@ else
     fi
 fi
 
+#HeadphoneCheck= echo $"pactl list sinks" | grep -qi "output-headphones" | grep -qi ", available"
 HeadphoneCheck=$(pactl list sinks | grep -i "output-headphones" | grep -i ", available")
+TOOLTIP="Speaker volume: $NUMERIC%"
+CLASS="speakers"
 
 if echo "$HeadphoneCheck" | grep -iq "available"; then
     #Audio Device Is Connected
-    ICON="᛫$ICON"    
+    ICON="᛫$ICON"
+    TOOLTIP="Headphone volume: $NUMERIC %"
+    CLASS="headphones"
 fi
-echo -e "{\"text\":\"" $NUMERIC% $ICON"\", \"alt\":\"" $ICON"\",\"tooltip\":\""Volume: $NUMERIC%"\", \"class\":\"""\"}"
+echo -e "{\"text\":\"" $NUMERIC% $ICON"\", \"alt\":\"" $ICON"\",\"tooltip\":\""$TOOLTIP"\", \"class\":\""$CLASS"\"}"

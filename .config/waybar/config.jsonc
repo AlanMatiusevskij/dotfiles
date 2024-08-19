@@ -22,6 +22,7 @@
     "format": "{name}",
     "disable-scroll": true,
   },
+
   "clock": {
     "format": "{:%a %d %b %H:%M}",
     "on-click": "kitty -e calcurse",
@@ -37,7 +38,7 @@
   "network": {
     "interval": 2,
     "format": "{icon}",
-    "format-alt": "[{bandwidthTotalBytes} {icon} ]",
+    "format-alt": "{bandwidthTotalBytes} {icon}",
     "format-alt-click": "click-right",
     "tooltip-format": "Connected to: {essid}\n\tSignal Strength: {signalStrength}%\n\tUp: {bandwidthUpBytes}\n\tDown: {bandwidthDownBytes}",
     "format-disconnected": ["󰤭 "],

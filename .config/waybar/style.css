@@ -9,8 +9,8 @@
 }
 
 window {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(44, 37, 32, 0.95);
+    color:      rgba(249, 244, 212, 1);
+    background: rgba(44, 37, 32, 0.9);
 }
 
 #workspaces {
@@ -19,49 +19,63 @@ window {
 
 #workspaces button {
     padding:    0 5px;
-    color:      rgba(217, 216, 216, 0.4);
+    color:      rgba(249, 244, 212, 0.4);
+	transition-property: background, color, padding, text-shadow;
+	transition-duration: .2s;
+	transition-timing-function: ease-out;
+}
+
+#workspaces button:hover{
+    background: rgba(0,0,0, 0.15);
+    color: rgba(249,244,212,0.6);
 }
 
 #workspaces button.visible {
-    color:      rgba(217, 216, 216, 1);
+    color:      rgba(249, 224, 212, 1);
 }
 
 #workspaces button.urgent {
     color:      rgba(238, 46, 36, 1);
 }
 
-#custom-storage {
-    margin: 0px 10px 0px 12px;
-    min-width: 0px
+#clock {
+    margin: 0px 10px 0px 4px;
+    min-width: 125px;
 }
 
-#cusstom-volume {
-    margin: 0px 14px 0px 5px;
+#language {
+    min-width: 23px;
+}
+
+#power-profiles-daemon {
+    min-width: 25px;
+    margin: 0px 0px 0px 5px;
+}
+
+#battery {
+    margin: 0px 0px 0px 5px;
 }
 
 #network {
-    margin: 0px 0px 0px 8px;
-}
-#language {
-    margin: 0px 4px 0px 0px;
-    min-width: 20px;
+    margin: 0px 0px 0px 6px;
 }
 
-#mode, #battery, #cpu, #memory, #cpu, #bluetooth,#tray, #power-profiles-daemon{
-    margin:     0px 7px 0px 7px;
+#bluetooth {
+    margin: 0px 0px 0px 5px;
 }
 
-#clock {
-    margin:     0px 10px 0px 4px;
-    min-width:  120px;
+#custom-volume.speakers {
+    min-width: 25px;
 }
 
-
-#custom-storage.warning {
-    color:      rgba(255, 210, 4, 1);
+#custom-volume.headphones {
+    min-width: 40px
 }
 
-#custom-storage.critical {
-    color:      rgba(238, 46, 36, 1);
+#custom-storage {
+    margin: 0px 6px 0px 8px;
 }
 
+#cpu {
+    min-width: 55px;
+}
