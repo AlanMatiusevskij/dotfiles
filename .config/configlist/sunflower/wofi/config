@@ -1,0 +1,12 @@
+mode=drun
+allow_images=true
+allow_markup=false
+term=kitty
+image_size=24
+insensitive=true
+parse_search=true
+no_actions=true
+columns=1
+hide_scroll=true
+width=300
+height=400

@@ -14,8 +14,6 @@ You can either copy and replace the directories found within ~/.config/configlis
 
 or
 
-> Before using the `-s` flag, make sure that `hyprpaper.sh` and `waybar.sh` bash scripts are in your HOME (~/) directory. (later will make it so c++ will replace those)
-
 use command `configlist -s <THEMENAME>`. 
 
 The list of already existing themes you can see by using `configlist -l`.
@@ -25,7 +23,7 @@ The list of already existing themes you can see by using `configlist -l`.
 You simply edit the current ~/.config/ folder and when you are done, use `configlist -c` (-create) flag to make a copy of specified config folders. 
 Then use `configlist -s` (-switch) to delete the current ~/.config/ folders that were specified doing 'creation' and replaces them.
 
-Do note that you might need to edit source code (it's a mess, don't look) if you want it to restart processes besides `hyprland, waybar, hyprpaper`.
+Do note that you might need to edit source code (it's a mess, don't look) if you want it to restart processes besides `hyprland, waybar, hyprpaper, kitty`.
 
 When deleting the current ~/.config/ folders to replace with the ones specified during 'creation', 
 the application creates a one-time backup of the current .config directories that are going to be replaced. Find the backup in ~/.config/configlist/last_replaced/
@@ -36,12 +34,13 @@ the application creates a one-time backup of the current .config directories tha
 
 `gsfonts noto-fonts`
 
-#### Things to manually change:
+### Things to manually change:
 
 **Required:**
 1) In `.config/hypr/Scripts/quote_gacha`, line 3, enter your user name.
-2) In `.config/hypr/hyprpaper.conf`, change active wallpapers and their paths (by default looks for them in ~/Pictures).
-3) In `.config/hypr/hyprlock.conf`, change lockscreen wallpaper path.
+2) In '.config/hypr/hyprland.conf', change monitor variables. *(, auto, auto, 1)*
+3) In `.config/hypr/hyprpaper.conf`, change active wallpapers and their paths (by default looks for them in ~/Pictures).
+4) In `.config/hypr/hyprlock.conf`, change lockscreen wallpaper path.
 
 Optional: 
 * Put `.config/hypr/Scripts/quote_gacha.sh` in your home directory for a chance to see a quote on Hyprland startup. (small list, however)

@@ -1,6 +1,6 @@
 #!/bin/bash
 #Motivational. and not.
-CACHE="/home//gacha_cache.txt"; #To make sure that all quotes are cycled through before repeating.
+CACHE="/home/alan/gacha_cache.txt";
 
 center() {
        local text="$1"
@@ -8,7 +8,6 @@ center() {
        printf "%*s\n" $(((${#text} + cols) / 2)) "$text"
 }
 
-#Edit this number when you add/remove quotes
 NUMBOFQUOTES=11
 generate_random() {
     echo "" >> $CACHE
@@ -128,8 +127,7 @@ _test(){
 #_test
 #############
 
-# Generate initial random number between 0 and 5
-# Edit The number `6` if you want less chance for quotes to appear
+# Generate initial random number between 0 and 4
 initial_random=$((RANDOM % 6))
 if [ "$initial_random" -eq 3 ]; then
     echo -e "\e[?25l"
